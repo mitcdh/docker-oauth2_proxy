@@ -1,12 +1,13 @@
-This is a lightweight (12.8 MB!) docker container for: 
+# Docker oauth2_proxy
 
-https://github.com/bitly/oauth2_proxy
+* Docker image to start a oauth2_proxy running on alpine:latest loads with -config /config/oauth2_proxy.cfg
 
-Follow their directions to get setup
+### Environment Variables
+* `OAUTH2_PROXY_VERSION`
+* `GO_VERSION`
 
+### Structure
+* `/config`: config directory
 
-
-Thanks
-------
-* The 'gold standard': https://github.com/gliderlabs/logspout
-* copying: https://hub.docker.com/r/texastribune/google-auth-proxy/.  This is perfect in its simplicity; it is just that docker container is 37x larger than this one.
+### Credits
+* [skippy/docker-oauth2_proxy](https://github.com/skippy/docker-oauth2_proxy) this is just an update of this fixed to load a hardcoded config
