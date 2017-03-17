@@ -13,4 +13,5 @@ RUN apk --update add curl \
   && rm -rf /var/cache/apk/*
 
 VOLUME /config
-CMD ["oauth2_proxy", "-config", "/config/oauth2_proxy.cfg"]
+ENTRYPOINT ["oauth2_proxy"]
+CMD ["-config", "/config/oauth2_proxy.cfg"]
