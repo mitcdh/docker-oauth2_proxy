@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Mitchell Hewes <me@mitcdh.com>
 
-ENV OAUTH2_PROXY_VERSION=2.2 GO_VERSION=go1.8.1
+ENV OAUTH2_PROXY_VERSION=2.2.0 GO_VERSION=go1.8.1
 
 RUN apk --update add curl \
   && curl -sL -o oauth2_proxy.tar.gz \
